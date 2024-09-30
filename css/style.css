@@ -128,73 +128,38 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 /* # MEDIAQUERY */
-
+.container {
+    width:100%
+}
 /*MOBILE*/
 
 @media screen and (max-width: 480px) {
 
-    .row {
-        flex-wrap: wrap;
-    }
+   .row{
+    flex-direction:colum;
+    gap:3rem;
+   }
+   .lessons.col,
+   .step.col,
+   .why-us .col-left,
+   .why-us .col-right{
+     width:100%
+   }
+   .step{
+    margin-bottom:0;
+   }
+   .why-us{
+    padding-top:3rem;
+    padding-bottom:3rem;
+    margin-bottom: 0;
+    background-color: #222;
+ }
+ .col.col-right li:last-child{
+    margin-bottom:0;
+ }
 
-    .lessons .col {
-        width: 100%;
-    }
-
-    .steps .col {
-        width: 100%;
-    }
-
-    .why-us .col-left, .why-us .col-right {
-        width: 100%;
-    }
-
-    .col:not(:last-child) {
-        margin-bottom: 3rem;
-    }
-
-    .steps, .why-us {
-        margin-bottom: 0;
-    }
-
-    .why-us {
-        background-color: #222222;
-        padding: 3rem;
-    }
 }
-      /*TABLET*/
-   @media screen and (max-width: 768px) {
-    .container {
-     width: 100%;
-    }
-    .row {
-      flex-wrap: wrap;
-    }
-    .lessons .col {
-      width: 100%;
-     }
     
-    .steps .col {
-      width: 100%;
-    }
-    
-    .why-us .col-left, .why-us .col-right {
-      width: 100%;
-    }
-    
-    .col:not(:last-child) {
-     margin-bottom: 3rem;
-    }
-    
-    .steps, .why-us {
-      margin-bottom: 0;
-    }
-    
-    .why-us {
-      background-color: #222222;
-      padding: 3rem;
-    }
-}
     /* BONUS*/
  @media screen and (min-width: 768px) and (max-width: 1160px) {
        
